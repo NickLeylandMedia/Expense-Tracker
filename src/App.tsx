@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/* Library Imports */
+//React
+import React from "react";
 
-function App() {
+/* Stylesheet Imports */
+import "normalize-scss";
+import "./styles/App.scss";
+
+/* Image Imports */
+
+/* Component Imports */
+import Summary from "./components/Summary";
+
+/* Component Interfaces */
+
+/* Component/Functions */
+const App = () => {
+  //Function return statement
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Summary />
     </div>
   );
-}
+};
 
+/* Export Statement */
 export default App;

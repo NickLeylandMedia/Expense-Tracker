@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background: rgb(89, 89, 89);
+  background: radial-gradient(
+    circle,
+    rgba(89, 89, 89, 1) 0%,
+    rgba(48, 46, 44, 1) 92%
+  );
+  height: 100vh;
+  width: 100vw;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
