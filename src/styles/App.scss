@@ -10,8 +10,32 @@ body {
   width: 100vw;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
 .row {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.bigBox {
+  min-height: 250px;
+  width: 94%;
+  margin: 15px auto;
+  background-color: white;
+  border-radius: 15px;
+  overflow: auto;
 }

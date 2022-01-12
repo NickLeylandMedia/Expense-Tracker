@@ -12,31 +12,44 @@
   margin: 15px 0;
   border-radius: 15px;
   box-shadow: 10px 5px 10px rgba(30, 30, 34, 0.2);
-  color: white;
+  color: black;
 }
 
 .summaryTitle {
-  margin: 10px 10px;
+  margin: 5px 10px;
+}
+
+.summaryFigure {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.25rem;
 }
 
 .income {
   width: 45%;
-  background: rgb(7, 110, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(7, 110, 0, 1) 0%,
-    rgba(48, 255, 0, 1) 100%
-  );
+  // background: rgb(7, 110, 0);
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(7, 110, 0, 1) 0%,
+  //   rgba(48, 255, 0, 1) 100%
+  // );
+  p {
+    color: green;
+  }
 }
 
 .expense {
   width: 45%;
-  background: rgb(110, 33, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(110, 33, 0, 1) 0%,
-    rgba(255, 0, 0, 1) 100%
-  );
+  // background: rgb(110, 33, 0);
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(110, 33, 0, 1) 0%,
+  //   rgba(255, 0, 0, 1) 100%
+  // );
+  p {
+    color: red;
+  }
 }
 
 .net {
