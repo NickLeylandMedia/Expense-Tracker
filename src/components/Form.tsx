@@ -11,17 +11,24 @@ import "../styles/Form.scss";
 
 /* Component Interfaces */
 interface Props {
+  count: number;
   fullArr: any[];
   pushFullArr: React.Dispatch<SetStateAction<any[]>>;
   setIsInput: React.Dispatch<SetStateAction<boolean>>;
+  setCount: React.Dispatch<SetStateAction<number>>;
 }
 
 /* Component/Functions */
-const Form: React.FC<Props> = ({ fullArr, pushFullArr, setIsInput }) => {
+const Form: React.FC<Props> = ({
+  count,
+  fullArr,
+  pushFullArr,
+  setCount,
+  setIsInput,
+}) => {
   //Form Data Handler
   const dataHandler = (e: any) => {
     e.preventDefault();
-    console.log(e.target.form[2]);
     const data = [...fullArr];
     const newItemTitle = e.target.form[0].value;
     const newItemAmount = e.target.form[1].value;
@@ -41,13 +48,20 @@ const Form: React.FC<Props> = ({ fullArr, pushFullArr, setIsInput }) => {
       Amount: number,
       Type: string | undefined
     ) => {
-      return { Name: Name, Amount: Amount, Type: Type };
+      return {
+        Name: Name,
+        Amount: Amount,
+        Type: Type,
+        ID: count,
+        MFD: false,
+      };
     };
 
     const newTrans = Transaction(newItemTitle, newItemAmount, newItemType);
 
     data.push(newTrans);
     pushFullArr(data);
+    setCount(count + 1);
   };
 
   //Function return statement
